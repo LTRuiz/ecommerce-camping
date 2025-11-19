@@ -227,7 +227,7 @@ button {
   padding-bottom: 1.5rem;
   background:
     linear-gradient(120deg, rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.1)),
-    url("../img/ultima.jpg") center/cover no-repeat;
+    url("../img/fondo.jpg") center/cover no-repeat;
   color: #f9fafb;
 }
 
@@ -503,7 +503,7 @@ button {
 .mid-banner--1::before {
   background-image:
     linear-gradient(to right, rgba(15,23,42,0.9), rgba(15,23,42,0.4)),
-    url("https://images.pexels.com/photos/848618/pexels-photo-848618.jpeg?auto=compress&cs=tinysrgb&w=1200");
+    url("../img/ropa.jpg");
 }
 
 .mid-banner--2::before {
