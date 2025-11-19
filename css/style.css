@@ -227,7 +227,7 @@ button {
   padding-bottom: 1.5rem;
   background:
     linear-gradient(120deg, rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.1)),
-    url("/img/ultima.jpg") center/cover no-repeat; /* 👈 tu imagen */
+    url("../img/ultima.jpg") center/cover no-repeat;
   color: #f9fafb;
 }
 
@@ -273,7 +273,7 @@ button {
   inset: 0;
   background-image: 
     linear-gradient(to bottom, rgba(2, 6, 23, 0.65), rgba(2, 6, 23, 0.25)),
-    url("/img/1.jpg");
+    url("../img/1.jpg");
   background-size: cover;
   background-position: center;
   z-index: 0;
@@ -350,20 +350,20 @@ button {
 
 /* Hero alternos */
 .hero-card--alt.hero-card--0::before {
-  background-image: url("/img/1.jpg");
+  background-image: url("../img/1.jpg");
   filter: brightness(0.7);
 }
 
 .hero-card--alt.hero-card--1::before {
-  background-image: url("/img/5.jpg");
+  background-image: url("../img/5.jpg");
   filter: brightness(0.7);
 }
 .hero-card--alt.hero-card--2::before {
-  background-image: url("/img/3.jpg");
+  background-image: url("../img/3.jpg");
   filter: brightness(0.7);
 }
 .hero-card--alt.hero-card--3::before {
-  background-image: url("/img/2.jpg");
+  background-image: url("../img/2.jpg");
   filter: brightness(0.7);
 }
 
@@ -619,7 +619,7 @@ button {
 
 .collection {
   position: relative;
-  background-image: url("/img/ultima.jpg");
+  background-image: url("../img/ultima.jpg");
   background-size: cover;
   background-position: center;
   min-height: 260px;
