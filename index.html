@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patagonia Camp Store</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- BARRA SUPERIOR -->
+  <div class="topbar">
+    <span>Envíos a todo el país · Hecho en la Patagonia Argentina</span>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__inner">
+      <div class="logo">
+        <span class="logo__icon">⛰️</span>
+        <span class="logo__text">Patagonia <strong>Camp</strong></span>
+      </div>
+
+      <!-- NAV PRINCIPAL -->
+      <nav class="main-nav">
+        <a href="#hero" class="main-nav__link">Inicio</a>
+        <a href="#productos" class="main-nav__link">Productos</a>
+        <a href="#categorias" class="main-nav__link">Categorías</a>
+        <a href="#coleccion" class="main-nav__link">Colección</a>
+      </nav>
+
+      <!-- ICONOS DERECHA -->
+      <div class="header__actions">
+        <button class="icon-btn" aria-label="Buscar">
+          🔍
+        </button>
+        <button class="icon-btn cart-toggle" aria-label="Carrito">
+          🛒
+          <span class="cart-count">0</span>
+        </button>
+
+        <!-- HAMBURGUESA MOBILE -->
+        <button class="hamburger" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- NAV CATEGORÍAS -->
+    <div class="header-cats">
+      <div class="container header-cats__inner">
+        <a href="#categorias" class="cat-link cat-link--active">Outdoor</a>
+        <a href="#categorias" class="cat-link">Camping</a>
+        <a href="#categorias" class="cat-link">Hiking</a>
+        <a href="#categorias" class="cat-link">Fishing</a>
+        <a href="#categorias" class="cat-link">Accesorios</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- PANEL CARRITO -->
+  <aside class="cart-panel">
+    <div class="cart-panel__header">
+      <h2>Carrito</h2>
+      <button class="cart-panel__close" aria-label="Cerrar carrito">✕</button>
+    </div>
+    <div class="cart-panel__body">
+      <div class="cart-items">
+        <!-- Items generados por JS -->
+      </div>
+      <div class="cart-summary">
+        <div class="cart-summary__row">
+          <span>Total:</span>
+          <span class="cart-total">$0</span>
+        </div>
+        <button class="btn btn--primary btn--full">Finalizar compra</button>
+      </div>
+    </div>
+  </aside>
+  <div class="cart-backdrop"></div>
+
+  <!-- NAV MOBILE (DESPLEGABLE) -->
+  <nav class="mobile-nav">
+    <a href="#hero" class="mobile-nav__link">Inicio</a>
+    <a href="#productos" class="mobile-nav__link">Productos</a>
+    <a href="#categorias" class="mobile-nav__link">Categorías</a>
+    <a href="#coleccion" class="mobile-nav__link">Colección</a>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="container hero__grid">
+        <article class="hero-card hero-card--main">
+          <div class="hero-card__content">
+            <p class="hero-tag">Patagonia Argentina</p>
+            <h1>Equipá tus aventuras en el fin del mundo</h1>
+            <p class="hero-text">
+              Conservadoras, bolsos de refrigeración, botellas térmicas y carpas diseñadas para el viento, la lluvia y el frío del sur.
+            </p>
+            <div class="hero-actions">
+              <a href="#productos" class="btn btn--primary">Ver productos</a>
+              <a href="#coleccion" class="btn btn--ghost">Colección '25</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="hero-card hero-card--alt hero-card--1">
+          <div class="hero-card__content hero-card__content--bottom">
+            <p class="hero-tag hero-tag--light">New arrivals</p>
+            <h2>Conservadoras de alta performance</h2>
+          </div>
+        </article>
+
+        <article class="hero-card hero-card--alt hero-card--2">
+          <div class="hero-card__content hero-card__content--bottom">
+            <p class="hero-tag hero-tag--light">Best seller</p>
+            <h3>Botellas térmicas</h3>
+          </div>
+        </article>
+
+        <article class="hero-card hero-card--alt hero-card--3">
+          <div class="hero-card__content hero-card__content--bottom">
+            <p class="hero-tag hero-tag--light">Camping trip</p>
+            <h3>Carpas & refugios</h3>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CATEGORÍAS -->
+    <section id="categorias" class="section">
+      <div class="container">
+        <header class="section__header">
+          <h2>Categorías</h2>
+          <p>Productos pensados para el clima patagónico.</p>
+        </header>
+
+        <div class="categories-grid">
+          <div class="category-pill">Conservadoras</div>
+          <div class="category-pill">Bolsos de refrigeración</div>
+          <div class="category-pill">Botellas & termos</div>
+          <div class="category-pill">Carpas</div>
+          <div class="category-pill">Accesorios</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTOS DESTACADOS -->
+    <section id="productos" class="section section--soft">
+      <div class="container">
+        <header class="section__header section__header--row">
+          <div>
+            <h2>Productos destacados</h2>
+            <p>Lo más elegido para esta temporada en la Patagonia.</p>
+          </div>
+          <a href="#productos" class="link-more">Ver todos</a>
+        </header>
+
+        <div class="product-grid">
+          <!-- Cada tarjeta tiene data-id para el carrito -->
+          <article class="product-card" data-id="cooler-45">
+            <div class="product-card__badge">Nuevo</div>
+            <div class="product-card__image">
+              <img src="img/pdto1.jpg" alt="Conservadora Sur 45L">
+            </div>
+            <h3>Conservadora Sur 45L</h3>
+            <p class="product-card__desc">Aislación extrema para días completos en el lago o la montaña.</p>
+            <div class="product-card__bottom">
+              <span class="product-card__price">$185.000</span>
+              <button class="btn btn--small btn--secondary btn-add-cart">Agregar</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-id="softcooler-20">
+            <div class="product-card__badge product-card__badge--blue">Best seller</div>
+            <div class="product-card__image">
+              <img src="img/pdto2.webp" alt="Bolso térmico Trek 20">
+            </div>
+            <h3>Bolso Térmico Trek 20</h3>
+            <p class="product-card__desc">Liviano y resistente al agua, ideal para hiking y kayak.</p>
+            <div class="product-card__bottom">
+              <span class="product-card__price">$96.500</span>
+              <button class="btn btn--small btn--secondary btn-add-cart">Agregar</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-id="bottle-1l">
+            <div class="product-card__badge product-card__badge--dark">Top</div>
+            <div class="product-card__image">
+              <img src="img/pdto3.jpg" alt="Botella térmica Andes 1L">
+            </div>
+            <h3>Botella Térmica Andes 1L</h3>
+            <p class="product-card__desc">Mantiene tu bebida caliente o fría por más de 12 horas.</p>
+            <div class="product-card__bottom">
+              <span class="product-card__price">$52.900</span>
+              <button class="btn btn--small btn--secondary btn-add-cart">Agregar</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-id="tent-3p">
+            <div class="product-card__badge product-card__badge--blue">Pro</div>
+            <div class="product-card__image">
+              <img src="img/pdto4.jpg" alt="Carpa Sur Patagónico 3P">
+            </div>
+            <h3>Carpa Sur Patagónico 3P</h3>
+            <p class="product-card__desc">Estructura reforzada para soportar viento y lluvia.</p>
+            <div class="product-card__bottom">
+              <span class="product-card__price">$245.000</span>
+              <button class="btn btn--small btn--secondary btn-add-cart">Agregar</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNERS MEDIOS -->
+    <section class="section mid-banners">
+    <div class="container">
+        <div class="mid-banners__grid">
+        <article class="mid-banner mid-banner--1">
+            <div class="mid-banner__content">
+            <p class="mid-banner__eyebrow">Ropa técnica</p>
+            <h3 class="mid-banner__title">Preparate para el frío</h3>
+            </div>
+        </article>
+
+        <article class="mid-banner mid-banner--2">
+            <div class="mid-banner__content">
+            <p class="mid-banner__eyebrow">Weekend Trip</p>
+            <h3 class="mid-banner__title">Kit completo de camping</h3>
+            </div>
+        </article>
+
+        <article class="mid-banner mid-banner--3">
+            <div class="mid-banner__content">
+            <p class="mid-banner__eyebrow">Equipos para río</p>
+            <h3 class="mid-banner__title">Pesca en la Patagonia</h3>
+            </div>
+        </article>
+        </div>
+    </div>
+    </section>
+
+
+    <!-- BANNERS / COLECCIÓN -->
+    <section id="coleccion" class="collection">
+      <div class="collection__overlay"></div>
+      <div class="container collection__content">
+        <p class="collection__tag">Colección '25</p>
+        <h2>Patagonia Deep South</h2>
+        <p>Una línea inspirada en los lagos fríos, los bosques húmedos y las noches bajo las estrellas.</p>
+        <a href="#productos" class="btn btn--primary">Descubrir productos</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2025 Patagonia Camp Store · Patagonia Argentina</p>
+      <p>Instagram: @patagoniacamp · Envíos a todo el país</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
