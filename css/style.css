@@ -509,13 +509,13 @@ button {
 .mid-banner--2::before {
   background-image:
     linear-gradient(to right, rgba(15,23,42,0.9), rgba(15,23,42,0.4)),
-    url("/img/2be20bc8a2ca026dd1a2f36e14db4488.jpg");
+    url("../img/2be20bc8a2ca026dd1a2f36e14db4488.jpg");
 }
 
 .mid-banner--3::before {
   background-image:
     linear-gradient(to right, rgba(15,23,42,0.9), rgba(15,23,42,0.4)),
-    url("/img/9074527ae7c6a12dbc8c9d93615d99c4.jpg");
+    url("../img/9074527ae7c6a12dbc8c9d93615d99c4.jpg");
 }
 
 /* Contenido texto */
