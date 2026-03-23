@@ -6,7 +6,7 @@ HTML5
 
 CSS3
 
-JavaScript (Vanilla)
+JavaScript
 
 📂 Estructura
 El proyecto mantiene una organización estándar de desarrollo web:
