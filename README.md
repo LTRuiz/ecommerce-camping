@@ -20,7 +20,7 @@ img/: Imágenes de productos.
 js/: Lógica y funciones.
 
 🚀 Instalación
-Clona el repo: git clone https://github.com/LTRuiz/patagonia-camp.git
+Clona el repo: git clone https://github.com/LTRuiz/ecommerce-camping.git
 
 Abre index.html en tu navegador.
 
